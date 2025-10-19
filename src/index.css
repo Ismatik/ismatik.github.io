@@ -1,0 +1,31 @@
+/* src/index.css */
+
+/* Import Tailwind CSS directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add any global styles here */
+body {
+  font-family: 'Poppins', sans-serif; /* Apply Poppins font globally */
+  scroll-behavior: smooth; /* Enable smooth scrolling for anchor links */
+  background-color: #f9fafb; /* Default background color, overridden by App component */
+  color: #374151; /* Default text color, overridden by App component */
+}
+
+/* Optional: Styles for scrollbar (for ProjectCard overflow) */
+/* This is a WebKit specific style, might not work in all browsers */
+.overflow-y-auto::-webkit-scrollbar {
+  width: 8px;
+}
+.overflow-y-auto::-webkit-scrollbar-track {
+  background: #f1f5f9; /* bg-indigo-50 */
+  border-radius: 4px;
+}
+.overflow-y-auto::-webkit-scrollbar-thumb {
+  background: #93c5fd; /* bg-indigo-300 */
+  border-radius: 4px;
+}
+.overflow-y-auto::-webkit-scrollbar-thumb:hover {
+  background: #60a5fa; /* bg-indigo-400 */
+}
